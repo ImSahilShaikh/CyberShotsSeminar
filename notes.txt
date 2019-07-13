@@ -34,3 +34,66 @@ facebookcorewwwi.onion
 
 ##################################################
 privacy and data theft
+
+##################################################
+
+the actual stuff starts at 1139
+
+intro about sql at 1139
+
+talking about sql injection 1141
+
+manas : whois.domaintools.com
+
+site.gov.in filetype pdf
+
+site.gov.in inurl:  php
+
+cheat sheets for google advance search
+
+takling about live hacking for a specific website
+
+he's using sublime
+
+talking about url's
+
+generic url:
+protocol://website.tld/directory/subdirectory/page1.aspx
+?: seperates address from url
+bm:bookmark
+protocol://website.tld/directory/subdirectory/page1.aspx?name=pict&address=pune.......#bm
+
+we're gng to change the parameters
+
+web-hack
+
+actual work
+
+actual		:select * from some database.table where ud = '56' & id='51';
+modified	:select * from some database.table where ud = '56' & id='51'';
+
+TALKING ABOUT SQL INJECTION
+
+BOOLEAN
+TIME-BASED
+blind based
+
+doing on boolean
+
+socks5 machine to machine comm
+-u url
+
+
+
+-dbs databases
+
+##################################################
+
+tor sqlmap --tor --tor-type=socks5 -u 'url' --check-tor -dbs
+
+tor sqlmap --tor --tor-type=socks5 -u 'url' --check-tor -dbs
+
+#all using sqlmap
+
+##################################################
+
