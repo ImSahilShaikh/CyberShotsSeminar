@@ -8,7 +8,7 @@ havebeenpwned.com
 
 ##################################################
 
-not so known repositiories
+not so known opensource repository platforms like github:
 pastebin
 binbucket
 
