@@ -96,4 +96,43 @@ tor sqlmap --tor --tor-type=socks5 -u 'url' --check-tor -dbs
 #all using sqlmap
 
 ##################################################
+his terminal
+
+'zsh':terminal
+
+our is basic bash terminal
+
+advantages: suggestions, syntaxes
+
+"/I SHOULD USE ZSH!!!!!!!!"
+
+##################################################
+
+******Wifi-hacking********
+
+talking about dhcp and beacon frames at 1221
+talking abour aircrack airmon airreplay
+
+sudo airmon-ng check kill 
+
+station mode
+monitor mode
+sniffing
+
+wireless interface card
+
+airmon-ng start wlp6s0
+
+wireless interface card name changed
+
+root@imsahil:~# sudo airodump-ng wlan0
+
+channels
+
+limitation on channels in particular country
+
+psk:preshared key
+
+
+
 
