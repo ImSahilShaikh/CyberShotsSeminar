@@ -172,3 +172,177 @@ and then restart network service
 
 ##################################################
 Setting up environment
+##################################################
+1) Docker
+--------------------------------------------------
+used for booting in some images
+use and flush ;) simple as it!!!!
+alternative for vm
+
+using it:
+
+root@imsahil:~# service apache2 stop
+
+root@imsahil:~# docker run --rm -it -p 80:80 sagikazarmark/dvwa
+it:interactive
+-p:port
+
+if doesnt works then restart the docker service
+
+go to the ip given in browser
+1.
+id : admin
+pass: password
+
+2.
+create
+
+3.
+again login
+
+4.
+then go to burpsuite
+
+5.
+next
+6.
+next
+
+7.
+burpsuite:
+
+8.
+brute-force
+
+9.
+login
+
+10.
+security:
+impossible
+11.
+set to low
+we are trying brute force
+
+12.
+burpsuite:
+intercept : off
+
+13.
+then insert login credentials:
+14.
+then turn intercept: on
+15.
+check the request on burpsuite
+
+right click
+send to intruder
+send to repeater
+
+change parameters
+click on go
+check page
+click on render
+click to render page
+see rendered page
+
+check intruder
+target
+host is server
+psoitions shows vulnerability
+
+buttons
+clear to clear the automatic detected vulnerabilties
+
+attack type: cluster bomb : two or multiple targets and multiple dictionaries
+sniper: 1 target attack 1 dictionary
+batterig ram: multiple dictionary one target
+pitch fork: multiple target multiple dictionaries
+
+select cluster bomb:
+select from right button add
+to username and password it will be enclosed by ampersand
+
+payload:
+dictionary to be sent
+sending anything to target is payload
+payload set: 1:for uname
+set 2: for pass
+payload type: simple list
+
+add words below//for testing ofcourse
+(we can load a file too!!)
+
+
+options tab:
+add the error message 'Username and/or password incorrect.' in grep match	
+
+start attack
+
+
+the correct credentials will not be checked
+
+go to response and render
+render the page
+
+done with burpsuite!!!!
+
+
+##################################################
+
+Command Injection:
+ping: give an ip
+but after adding semicolon or pipeline we can use any command
+like cat passwd or any linux commands
+
+# he said about nc command
+
+##################################################
+
+CSRF skipped
+
+##################################################
+
+File Inclusion:
+
+http://172.17.0.2/vulnerabilities/fi/?page=file1.php
+http://172.17.0.2/vulnerabilities/fi/?page=file2.php
+http://172.17.0.2/vulnerabilities/fi/?page=file3.php
+
+http://172.17.0.2/vulnerabilities/fi/?page=../../index.php
+
+http://172.17.0.2/vulnerabilities/fi/?page=../../../../../../../../../../etc/passwd
+#../will be neglected if in home
+
+we are exploiting te page navigation show a file 
+which is not intended to be there
+##################################################
+
+File upload:
+
+r57 shell
+c99 shell
+
+file check :
+:-extension
+:-image-content
+:-
+
+#talked about netcraft & whois
+#every gif is gif98a or gif89
+ENTER GIF 89 AT BEGINNING OF PHP FILE
+
+upload a shell as a file
+/hackable/uploads/shell.php
+
+use url
+
+then we can use any command on that url
+//////script issues :(
+##################################################
+SQL INJECTION!!
+
+sqlmap -u 'http://172.17.0.2/vulnerabilities/sqli/?id=&Submit=Submit'
+
+
+##################################################
