@@ -1,0 +1,2 @@
+note: check all unnecessary services and remove them if not required
+# service --status-all
