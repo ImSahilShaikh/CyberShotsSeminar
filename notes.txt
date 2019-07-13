@@ -1,0 +1,8 @@
+#########################
+email pwned check
+havebeenpwned.com
+#########################
+not so known repositiories
+pastebin
+binbucket
+#########################
